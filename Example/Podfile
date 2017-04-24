@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SQFeedbackGenerator_Example' do
+  pod 'SQFeedbackGenerator', :path => '../'
+
+  target 'SQFeedbackGenerator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
