@@ -23,7 +23,7 @@ public final class SQFeedbackGenerator {
         }
 
         static func generateFeedback(intensity: LegacyHapticFeedbackIntensity) {
-            if UIDevice.current.hasHapticFeedback, #available(iOS 10.0, *) {
+            if UIDevice.current.sqHasHapticFeedback, #available(iOS 10.0, *) {
                 let notificationGenerator = UINotificationFeedbackGenerator()
                 notificationGenerator.prepare()
 

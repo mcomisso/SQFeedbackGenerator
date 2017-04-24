@@ -11,13 +11,13 @@ import UIKit
 
 public extension UIDevice {
 
-    public func platform() -> String {
+    public func sqPlatform() -> String {
         var sysinfo = utsname()
         uname(&sysinfo) // ignore return value
         return String(bytes: Data(bytes: &sysinfo.machine, count: Int(_SYS_NAMELEN)), encoding: .ascii)!.trimmingCharacters(in: .controlCharacters)
     }
 
-    public var hasHapticFeedback: Bool {
-        return ["iPhone9,1", "iPhone9,3", "iPhone9,2", "iPhone9,4"].contains(platform())
+    public var sqHasHapticFeedback: Bool {
+        return ["iPhone9,1", "iPhone9,3", "iPhone9,2", "iPhone9,4"].contains(sqPlatform())
     }
 }
