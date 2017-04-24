@@ -1,11 +1,9 @@
-# SQFeedbackGenerator
+![Logo](https://raw.githubusercontent.com/mcomisso/SQFeedbackGenerator/master/res/SQFeedbackGeneratorLogo@2x.png)
 
 [![CI Status](http://img.shields.io/travis/mcomisso/SQFeedbackGenerator.svg?style=flat)](https://travis-ci.org/mcomisso/SQFeedbackGenerator)
 [![Version](https://img.shields.io/cocoapods/v/SQFeedbackGenerator.svg?style=flat)](http://cocoapods.org/pods/SQFeedbackGenerator)
 [![License](https://img.shields.io/cocoapods/l/SQFeedbackGenerator.svg?style=flat)](http://cocoapods.org/pods/SQFeedbackGenerator)
 [![Platform](https://img.shields.io/cocoapods/p/SQFeedbackGenerator.svg?style=flat)](http://cocoapods.org/pods/SQFeedbackGenerator)
-
-![Logo](https://raw.githubusercontent.com/mcomisso/SQFeedbackGenerator/master/res/SQFeedbackGeneratorLogo.png)
 
 ## Description
 
@@ -18,8 +16,6 @@ It will trigger the vibration you can feel during normal 3D touch usage, such as
 - error (press an app **without** UIApplicationShortcutItem)
 - success (press an app **with** UIApplicationShortcutItem)
 - notification (force press on keryboard)
-
-
 
 ## Example
 
