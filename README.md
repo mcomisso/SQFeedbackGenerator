@@ -52,7 +52,8 @@ pod try SQFeedbackGenerator
 ## Author
 
 Matteo Comisso, matteo.comisso@me.com
-twitter: @teomatteo89
+
+twitter: [@teomatteo89](https://twitter.com/teomatteo89)
 
 ## License
 
