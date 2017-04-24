@@ -5,9 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/SQFeedbackGenerator.svg?style=flat)](http://cocoapods.org/pods/SQFeedbackGenerator)
 [![Platform](https://img.shields.io/cocoapods/p/SQFeedbackGenerator.svg?style=flat)](http://cocoapods.org/pods/SQFeedbackGenerator)
 
-## Description
-
 ![Logo](https://raw.githubusercontent.com/mcomisso/SQFeedbackGenerator/master/res/SQFeedbackGeneratorLogo.png)
+
+## Description
 
 This small library was written for Squirrel, a work-in-progress iOS application.
 
