@@ -5,6 +5,22 @@
 [![License](https://img.shields.io/cocoapods/l/SQFeedbackGenerator.svg?style=flat)](http://cocoapods.org/pods/SQFeedbackGenerator)
 [![Platform](https://img.shields.io/cocoapods/p/SQFeedbackGenerator.svg?style=flat)](http://cocoapods.org/pods/SQFeedbackGenerator)
 
+## Description
+
+![Logo](https://raw.githubusercontent.com/mcomisso/SQFeedbackGenerator/master/res/SQFeedbackGeneratorLogo.png)
+
+This small library was written for Squirrel, a work-in-progress iOS application.
+
+*SQFeedbackGenerator* ports **UINotificationFeedbackGenerator** to iPhone 6S generation devices.
+
+It will trigger the vibration you can feel during normal 3D touch usage, such as:
+
+- error (press an app **without** UIApplicationShortcutItem)
+- success (press an app **with** UIApplicationShortcutItem)
+- notification (force press on keryboard)
+
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -20,9 +36,23 @@ it, simply add the following line to your Podfile:
 pod "SQFeedbackGenerator"
 ```
 
+## Try it
+
+You can try this library just by writing
+
+```ruby
+pod try SQFeedbackGenerator
+```
+
+## TODO
+
+- A new logo
+- ??
+
 ## Author
 
-mcomisso, matteo.comisso@me.com
+Matteo Comisso, matteo.comisso@me.com
+twitter: @teomatteo89
 
 ## License
 
