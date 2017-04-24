@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SQFeedbackGenerator'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'SQFeedbackGenerator can generates Haptic Feedbacks for iPhone 6S/6S+ and newer.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ This small library was built to extend haptic feedbacks to iPhone 6S/6S+ devices
   s.source           = { :git => 'https://github.com/mcomisso/SQFeedbackGenerator.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/teomatteo89'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '9.3'
 
   s.source_files = 'SQFeedbackGenerator/Classes/**/*'
   
