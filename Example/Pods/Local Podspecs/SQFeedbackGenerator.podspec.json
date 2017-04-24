@@ -1,0 +1,22 @@
+{
+  "name": "SQFeedbackGenerator",
+  "version": "0.1.0",
+  "summary": "A short description of SQFeedbackGenerator.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mcomisso/SQFeedbackGenerator",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mcomisso": "matteo.comisso@me.com"
+  },
+  "source": {
+    "git": "https://github.com/mcomisso/SQFeedbackGenerator.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SQFeedbackGenerator/Classes/**/*"
+}

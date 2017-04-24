@@ -40,9 +40,9 @@
 		607FACE51AFB9204008FA782 /* SQFeedbackGenerator_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQFeedbackGenerator_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6D5E02300F5A8603FC2D211A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		78312B13BC2C40FD8842448D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		86F354F41AAA96D02E3C2FBD /* SQFeedbackGenerator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SQFeedbackGenerator.podspec; path = ../SQFeedbackGenerator.podspec; sourceTree = "<group>"; };
+		6D5E02300F5A8603FC2D211A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		78312B13BC2C40FD8842448D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		86F354F41AAA96D02E3C2FBD /* SQFeedbackGenerator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SQFeedbackGenerator.podspec; path = ../SQFeedbackGenerator.podspec; sourceTree = "<group>"; };
 		899E7D9342C2DEC0D9B13FE6 /* Pods_SQFeedbackGenerator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SQFeedbackGenerator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2D48D2D865C4C4535458FE /* Pods-SQFeedbackGenerator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQFeedbackGenerator_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SQFeedbackGenerator_Tests/Pods-SQFeedbackGenerator_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B6BFBE8C40AA6E931FAECF83 /* Pods-SQFeedbackGenerator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQFeedbackGenerator_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SQFeedbackGenerator_Tests/Pods-SQFeedbackGenerator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -497,6 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SQFeedbackGenerator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -511,6 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SQFeedbackGenerator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

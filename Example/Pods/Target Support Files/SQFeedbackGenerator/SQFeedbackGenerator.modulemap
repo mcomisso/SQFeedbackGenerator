@@ -1,0 +1,6 @@
+framework module SQFeedbackGenerator {
+  umbrella header "SQFeedbackGenerator-umbrella.h"
+
+  export *
+  module * { export * }
+}

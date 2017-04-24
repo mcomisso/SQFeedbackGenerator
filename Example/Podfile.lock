@@ -1,0 +1,16 @@
+PODS:
+  - SQFeedbackGenerator (0.1.0)
+
+DEPENDENCIES:
+  - SQFeedbackGenerator (from `../`)
+
+EXTERNAL SOURCES:
+  SQFeedbackGenerator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SQFeedbackGenerator: 2a47e02df5161b413affc7162c5739237f9225d6
+
+PODFILE CHECKSUM: e1e8390658edadcb74b62d16dbe2120bcb5a62b2
+
+COCOAPODS: 1.2.0
