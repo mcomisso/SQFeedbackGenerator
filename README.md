@@ -7,15 +7,16 @@
 
 ## Description
 
-This small library was written for Squirrel, a work-in-progress iOS application.
+This small library was written for Squirrel, a work-in-progress iOS application.  
+The idea came after trying [Bear, an amazing note taking application](https://itunes.apple.com/it/app/bear-scrivi-le-tue-note-con-stile/id1016366447?mt=8), so kudos to Bear.
 
 *SQFeedbackGenerator* ports **UINotificationFeedbackGenerator** to iPhone 6S generation devices.
 
 It will trigger the vibration you can feel during normal 3D touch usage, such as:
 
-- error (press an app **without** UIApplicationShortcutItem)
-- success (press an app **with** UIApplicationShortcutItem)
-- notification (force press on keryboard)
+- error (example: press an app **without** UIApplicationShortcutItem)
+- success (example: press an app **with** UIApplicationShortcutItem)
+- notification (example: force press on keryboard)
 
 ## Example
 
