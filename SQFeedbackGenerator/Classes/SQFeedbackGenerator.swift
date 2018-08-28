@@ -10,12 +10,18 @@ import Foundation
 import AudioToolbox
 import UIKit
 
-public typealias SQCompletionBlock = () -> Void
+public typealias SQNotificationCompletionBlock = () -> Void
 
 public final class SQFeedbackGenerator {
 
     /// Fallback for unsupported devices, magic numbers
     final class SQHaptic {
+
+        /// These are sounds code for triggering a haptic feedback on iPhone 6S generation.
+        ///
+        /// - weak: single weak
+        /// - strong: single strong
+        /// - error: three consecutive strong
         enum LegacyHapticFeedbackIntensity: UInt32 {
             case weak   = 1519
             case strong = 1520
@@ -23,7 +29,8 @@ public final class SQFeedbackGenerator {
         }
 
         static func generateFeedback(intensity: LegacyHapticFeedbackIntensity) {
-            if UIDevice.current.sqHasHapticFeedback, #available(iOS 10.0, *) {
+
+            if UIDevice.current.hasHapticFeedback, #available(iOS 10.0, *) {
                 let notificationGenerator = UINotificationFeedbackGenerator()
                 notificationGenerator.prepare()
 
@@ -54,19 +61,19 @@ public final class SQFeedbackGenerator {
 
     public init() { }
 
-    fileprivate func generateSuccessFeedback(_ completion: SQCompletionBlock?) {
+    fileprivate func generateSuccessFeedback(_ completion: SQNotificationCompletionBlock?) {
         defer { SQHaptic.generateFeedback(intensity: .weak) }
         guard let completion = completion else { return }
         completion()
     }
 
-    fileprivate func generateErrorFeedback(_ completion: SQCompletionBlock?) {
+    fileprivate func generateErrorFeedback(_ completion: SQNotificationCompletionBlock?) {
         defer { SQHaptic.generateFeedback(intensity: .error) }
         guard let completion = completion else { return }
         completion()
     }
 
-    fileprivate func generateNotificationFeedback(_ completion: SQCompletionBlock?) {
+    fileprivate func generateNotificationFeedback(_ completion: SQNotificationCompletionBlock?) {
         defer { SQHaptic.generateFeedback(intensity: .weak) }
         guard let completion = completion else { return }
         completion()
@@ -80,7 +87,7 @@ extension SQFeedbackGenerator {
     /// - Parameters:
     ///   - type: Type can be .notification, .error, .success
     ///   - completion: Optional completion block to execute
-    public func generateFeedback(type: SQFeedbackType, completion: SQCompletionBlock? = nil) {
+    public func generateFeedback(type: SQFeedbackType, completion: SQNotificationCompletionBlock? = nil) {
         switch type {
         case .success:
             self.generateSuccessFeedback(completion)
