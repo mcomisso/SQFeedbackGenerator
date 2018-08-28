@@ -61,7 +61,7 @@ class ViewController: UIViewController {
 
 fileprivate typealias ButtonsActions = ViewController
 extension ButtonsActions {
-    func didPressButton(_ sender: Any?) {
+    @objc func didPressButton(_ sender: Any?) {
         guard let sender = sender as? UIButton else { return }
 
         switch sender.tag {
